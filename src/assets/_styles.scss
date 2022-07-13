@@ -1,0 +1,44 @@
+$font: Poppins, sans-serif;
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+#wrike-logo {
+    width: 50px;
+    position: absolute;
+}
+.text-danger {
+    margin-right: 5px;
+}
+.form-check-input,
+#all-tasks {
+    border: 2px solid #333;
+}
+
+.select, .form-control {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    font-size: 14px !important;
+}
+.dp__theme_light {
+    border-radius: 10px;
+    font-size: 14px !important;
+}
+.v-select {
+    #vs1__combobox.vs__dropdown-toggle {
+        .vs__actions {
+            display: none;
+          }
+    }
+}
+.hidden {
+    display: none;
+}
+
+#others {
+    font-size: 12px;
+}
+
+
