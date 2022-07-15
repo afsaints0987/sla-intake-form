@@ -1,33 +1,22 @@
 <template>
-  <v-select class="select style-chooser" 
-    :options="options" 
-    :label="label" 
-    :placeholder="placeholder"
-    :required="required"
-    :value="value"
-    @change="checkValue"
-    >
-  </v-select>
+  <select class="form-select form-select-sm" @change="checkValue">
+    <option selected disabled>{{label}}</option>
+    <option v-for="(option, index) in options" :key="index" :value="option.id">{{option.name}}</option>
+  </select>
 </template>
 <script>
-import vSelect from 'vue-select'
-import 'vue-select/dist/vue-select.css'
-
 export default {
   name: "SelectField",
   props: {
-      options: Array,
+      options: Object,
       placeholder: String,
       label: String,
       required: Boolean,
       value: String
   },
-  components: {
-    vSelect
-  },
   methods: {
     checkValue(e){
-      this.$emit("customCheck", e.target.selected)
+      this.$emit("customCheck", e.target.value)
     }
   }
 };

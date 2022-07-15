@@ -2,7 +2,7 @@
   <div class="form-group mt-4">
     <Datepicker v-model="date" 
     :format="format" 
-    class="dp__theme_light"
+    class="dp__theme_light w-50"
     :disabledWeekDays="[6,0]"
     weekStart="0"
     ref="datepicker"
